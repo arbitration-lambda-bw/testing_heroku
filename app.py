@@ -14,6 +14,7 @@ from flask import Flask, render_template, request, jsonify
 import category_encoders as ce
 import pickle
 import pandas as pd
+import os
 
 def create_app():
   """Create and configure an instance of the Flask application."""
