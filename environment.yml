@@ -5,5 +5,3 @@ dependencies:
     - heroku
     - flask
     - category_encoders
-    - pickle
-    - json
