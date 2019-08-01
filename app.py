@@ -13,7 +13,6 @@ features = ['state', 'hour', 'night', 'location', 'lat', 'lng', 'district', 'sub
 from flask import Flask, render_template, request, jsonify
 import category_encoders as ce
 import pickle
-import json
 import pandas as pd
 
 def create_app():
