@@ -60,8 +60,6 @@ mccabe==0.6.1
 mistune==0.8.4
 mlxtend==0.16.0
 murmurhash==1.0.0
-navigator-updater==0.2.1
-nb-conda-kernels==2.2.2
 nbconvert==5.5.0
 nbformat==4.4.0
 networkx==2.3
