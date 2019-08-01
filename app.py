@@ -63,12 +63,11 @@ def create_app():
     json_responses_state = {}
     results = []
     for state in states:
-        print(state, age, race, sex, types, night)
+
         inputs = [state, night, age, race, sex, types]
         pred_input = pd.DataFrame([inputs], columns=['states', 'night', 'subject_age', 'subject_race', 'subject_sex', 'type'] )
         pred_input_encoded = loaded_encoder.transform(pred_input)
         result = loaded_model.predict_proba(pred_input_encoded)
-        print(result)
 
         json_responses = {}
         for i in range(len(result[0])):
@@ -76,7 +75,6 @@ def create_app():
             json_responses.update(json_response)
         json_response_state = {"{0}".format(state): json_responses}
         final_state_json.append(json_response_state)
-    print(final_state_json)
     json = list(final_state_json)
     return jsonify(json)
 

@@ -11,6 +11,7 @@ heroku = "*"
 category-encoders = "*"
 pickle = "*"
 json = "*"
+xgboost = "*"
 
 [requires]
 python_version = "3.7"
