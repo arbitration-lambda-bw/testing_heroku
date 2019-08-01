@@ -1,4 +1,4 @@
-xgboost==0.9
+sklearn==0.21.3
 flask==1.1.1
 pywinpty==0.5.5
 asn1crypto==0.24.0
